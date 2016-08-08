@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><%= title %></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to <%= title %></h1>
+		<h3>Features</h3>
+		<div class="well">
+			<ul>
+			    <li>Get the image URLs for a set of images relating to a given search string.</li>
+			    <li>Able to paginate through the results using ?offset query.</li>
+			    <li>Get a list of the 10 most recently submitted search strings.</li>
+			</ul>
+		</div>
+		<h3>Usage</h3>
+		<div class="well">
+			<h4>Search for Images</h4>
+			<p>http://imgsearch-ms.heroku.com/api/imagesearch/golfing cats</p>
+			<h4>Page for next results</h4>
+			<p>http://imgsearch-ms.heroku.com/api/imagesearch/golfing cats?offset=5</p>
+			<h4>List most recent search terms</h4>
+			<p>http://imgsearch-ms.heroku.com/api/latest/imagesearch</p>
+		</div>
+		<h3>JSON Response to Search</h3>
+		<div class=well>
+			<p>Returns an array of image objects</p>
+			[ { title: '...',
+			    url: '...',
+			    thumbnail: '...',
+			    source: '...'
+			  } 
+			]
+		</div>
+	    <footer class="text-center">
+	  		<p>&copy; 2016 Ken Dulin - a FreeCodeCamp Back-end API project</p>
+        </footer>
+        <!-- Scripts -->
+    	<script src="/js/landing.js"></script>
+	</div>
+
+</body>
+</html>

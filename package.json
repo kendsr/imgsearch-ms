@@ -1,0 +1,21 @@
+{
+  "name": "imgsearch-ms",
+  "version": "1.0.0",
+  "description": "FCC API Project- Image Search Microservice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "nodemon server.js"
+  },
+  "author": "Ken Dulin",
+  "license": "ISC",
+  "dependencies": {
+    "bing.search": "^1.0.1",
+    "dotenv": "^2.0.0",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.8",
+    "morgan": "^1.7.0",
+    "serve-favicon": "^2.3.0"
+  }
+}
