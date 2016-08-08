@@ -13,12 +13,15 @@ Search for Images:
     http://imgsearch-ms.heroku.com/api/imagesearch/golfing cats
 
 Page for next results:
+
     http://imgsearch-ms.heroku.com/api/imagesearch/golfing cats?offset=5
 
 List most recent search terms:
+
     http://imgsearch-ms.heroku.com/api/latest/imagesearch
     
 JSON Response:
+
     Returns an array of image objects
     [ { title: '...',
         url: '...',
