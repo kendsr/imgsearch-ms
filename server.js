@@ -8,7 +8,7 @@ var express = require("express"),
 	port = process.env.PORT || 3000,
 	title = "Image Search";
 
-require('dotenv').config();
+require('dotenv').config({silent:true});
 
 // Set template enjine
 app.set("view engine", "ejs");
